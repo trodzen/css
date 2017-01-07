@@ -1,0 +1,638 @@
+P, BODY, TD, DIV, UL {
+	font-size: 13px;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	font-weight: normal;
+	color: #000; /* black */
+}
+
+BODY {
+	margin: 5px 10px 0px 10px;
+	background: #fff; /* white */
+}
+
+BODY.fb {
+	margin: 0px 10px 0px 0px;
+	background: #fff; /* white */
+}
+
+FORM {
+	margin: 0px;
+}
+
+A {
+	color: #03C;
+}
+
+HR {
+	margin: 0px 0px 0px 0px;
+	border: 1px solid #999; /* medium grey */
+	background: #FFF; /* white */
+	color: #036; /* navy blue */
+}
+
+/* --------------------------------------------------------------------
+	Nav Bar group
+-------------------------------------------------------------------- */		
+DIV.navbar {
+	height: 26px;
+	width: 100%;
+	border-bottom: solid #CCC 4px; /* light grey */
+	background-color: #336699; /* blue */
+}
+DIV.navbar UL {
+	margin: 0px;
+	padding: 0px;
+	font-size: 15px;
+	color: #FFF; /* white */
+	background-color: #FFF; /* white */
+	line-height: 26px;
+	white-space: nowrap;
+}
+DIV.navbar LI {
+	list-style-type: none;
+	display: inline;
+}
+DIV.navbar LI A {
+	text-decoration: none;
+	padding: 4px 15px 4px 15px;
+	color: #FFF; /* white */
+	background-color: #336699; /* blue */
+}
+DIV.navbar LI A:link {
+	color: #FFF; /* white */
+}
+DIV.navbar LI A:visited {
+	color: #FFF; /* white */
+}
+DIV.navbar LI A:hover {
+	color: #FFF; /* white */
+	background-color: #3366FF; /* light blue */
+}
+
+/* --------------------------------------------------------------------
+	Page Layout
+-------------------------------------------------------------------- */		
+DIV#pagewrapper {
+	width: 780px;
+	margin: 0 auto;
+}
+DIV#contentwrapper {
+	width: 760px;
+	margin: 5px 10px 10px 10px ;
+}
+DIV.pagefooter {
+	font-size: 9px;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	text-align:center
+}
+.editpage {
+	margin: 0px;
+	padding: 0px;
+	font-size: 9px;
+}
+.editpage A {
+	margin: 0px;
+	padding: 0px;
+	font-size: 9px;
+}
+
+
+/*
+
+DIV.header {
+}
+DIV.column-left {
+	width: 33%;
+	float: left;
+}
+DIV.column-center {
+	width: 33%;
+	float: left;
+}
+DIV.column-right {
+	width: 34%;
+	float: left;
+}
+DIV.footer {
+}
+DIV.left-box {
+	border-right: solid #CCC 1px;  light grey 
+	padding: 10px;
+}
+DIV.center-box {
+	padding: 10px;
+}
+DIV.right-box {
+	border-right: solid #CCC 1px;  light grey 
+	padding: 10px;
+}
+DIV.footer-box {
+	border-right: solid #CCC 1px;  light grey 
+	padding: 10px;
+}
+
+*/
+
+/* --------------------------------------------------------------------
+	Editor styles
+-------------------------------------------------------------------- */		
+span.alert {
+background:#FFD6D6 url(/bn/images/alert.png) no-repeat scroll 5px 50%;
+border:3px solid #FE7B7A;
+color:#C00;
+}
+
+span.info {
+background:#D8E5F8 url(/bn/images/sysmessage.png) no-repeat scroll 5px 50%;
+border:3px solid #629DE3;
+color:#05B;
+}
+
+span.note {
+background:#FEF6D8 url(/bn/images/note.png) no-repeat scroll 5px 50%;
+border:3px solid #FDE179;
+color:#B79000;
+}
+
+span.alert,span.help,span.down,span.idea,span.info,span.download,span.note {
+display:block;
+margin:15px 0;
+padding:10px 10px 10px 45px;
+}
+
+ul.check li {
+background:transparent url(/bn/images/check.png) no-repeat scroll 0 50%;
+}
+ul.check {
+list-style-position:outside;
+list-style:none;
+margin-bottom:10px;
+margin-left:0;
+padding-left:0;
+}
+ul.check li {
+margin-bottom:10px;
+padding-left:30px;
+}
+ul.check li.blank {
+background:transparent url(/bn/images/blank.png) no-repeat scroll 0 50%;
+}
+ul.check li ul {
+list-style:none;
+}
+
+th {
+background-color:#DAE0ED;
+color:#000;
+font-weight:700;
+padding-left:3px;
+text-align:left;
+}
+
+
+
+/* --------------------------------------------------------------------
+	System and User (editor) text types
+-------------------------------------------------------------------- */		
+.Largest {
+	font-size: 30px;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
+.Larger {
+	font-size: 24px;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
+.Large {
+	font-size: 18px;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
+.Medium {
+	font-size: 15px;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
+.Small {
+	font-size: 13px;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
+.Smaller {
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
+.Smallest {
+	font-size: 9px;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
+
+/* --------------------------------------------------------------------
+	Additional System text types
+-------------------------------------------------------------------- */		
+.LargeItalic {
+	font-size: 18px;
+	font-style: italic;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
+.MediumItalic {
+	font-size: 15px;
+	font-style: italic;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
+.SmallItalic {
+	font-size: 13px;
+	font-style: italic;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
+.SmallerItalic {
+	font-size: 11px;
+	font-style: italic;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
+.SmallestItalic {
+	font-size: 9px;
+	font-style: italic;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
+.MediumFade {
+	font-size: 15px;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #ABABAB;
+}
+.SmallFade {
+	font-size: 13px;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #ABABAB;
+}
+.SmallerFade {
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #ABABAB;
+}
+.SmallerItalicFade {
+	font-size: 11px;
+	font-style: italic;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #ABABAB;
+}
+.SmallestFade {
+	font-size: 9px;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #ABABAB;
+}
+.SmallestFade A {
+	font-size: 9px;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #ABABAB;
+}
+.SmallestFadeBold {
+	font-size: 9px;
+	font-weight: 700;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #EBEBEB;
+}
+.SmallestFadeBold A {
+	font-size: 9px;
+	font-weight: 700;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #EBEBEB;
+}
+.MediumBold {
+	font-size: 15px;
+	font-weight: 700;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
+.MediumBold A {
+	font-size: 15px;
+	font-weight: 700;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
+
+/* --------------------------------------------------------------------
+	Named text types
+-------------------------------------------------------------------- */		
+.emphasis {
+	font-size: 13px;
+	font-weight: 700;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
+.label {
+	font-size: 11px;
+	font-weight: 400;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #5B6998;
+}
+.boldlabel {
+	font-size: 11px;
+	font-weight: 700;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+}
+.infolabel {
+	font-size: 11px;
+	font-weight: 400;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #5B6998;
+}
+.heading {
+	width: 760px;
+	margin: 0px 0px 10px 0px;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #036;
+}
+.biggerheading {
+	font-size: 18px;
+	font-weight: 700;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #036;
+}
+.biggestheading {
+	font-size: 24px;
+	font-weight: 700;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #036;
+}
+.goodheading {
+	font-size: 18px;
+	font-weight: 700;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #006633;
+}
+.conflictheading {
+	font-size: 18px;
+	font-weight: 700;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #FF0000;
+}
+.errortext {
+	font-size: 13px;
+	font-weight: 400;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: red;
+}
+.Smallestshaded {
+	font-size: 9px;
+	font-weight: 400;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #5B6998;
+}
+.Smallestshaded A {
+	font-size: 9px;
+	font-weight: 400;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #5B6998;
+}
+.Smallershaded {
+	font-size: 11px;
+	font-weight: 400;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #5B6998;
+}
+.shaded {
+	font-size: 13px;
+	font-weight: 400;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #5B6998;
+}
+.highlight {
+	font-size: 13px;
+	font-weight: 400;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #036;
+}
+.highlightbold {
+	font-size: 15px;
+	font-weight: 700;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: #036;
+}
+.letter {
+	font-size: 16px;
+	font-family: Comic Sans MS, Verdana, Arial, Helvetica, Sans-serif;
+}
+TD.letter P {
+	font-size: 16px;
+	font-family: Comic Sans MS, Verdana, Arial, Helvetica, Sans-serif;
+}
+.line {
+	background: #999;
+	color: #000;
+}
+.extrasmallButton {
+	font-size: 9px;
+}
+.smallButton {
+	font-size: 11px;
+}
+
+/* --------------------------------------------------------------------
+	Tables group
+-------------------------------------------------------------------- */
+TABLE.StdTable {
+	border-top: solid 1px #D5D5D5;
+	border-left: solid 1px #D5D5D5;
+}
+TABLE.StdTable TD {
+	border-bottom: solid 1px #D5D5D5;
+	border-right: solid 1px #D5D5D5;
+	font-size: 11px;
+	font-weight: 400;
+}
+TABLE.StdTableInner {
+	border: 0px;
+}
+TABLE.StdTableInner TD {
+	border: 0px;
+	font-size: 11px;
+	font-weight: 400;
+}
+TR.StdRowHeading {
+	background: #E7E7E7;
+}
+TR.StdRowHeading TD {
+	color: #5B6998;
+}
+TR.StdRowOdd {
+	background: #F6F6F6;
+}
+TR.StdRowEven {
+	background: #FFFFFF;
+}
+TABLE.messageTable {
+	margin: 0px 0px 10px 0px;
+	border: solid 1px #aaa;
+	background: #FFFFCC;
+}
+TABLE.messageTableInner {
+	background: #FFFFCC;
+}
+TR.messageTableRow {
+	font-size: 11px;
+	font-weight: 400;
+}
+TABLE.DataTable {
+	border-top: solid 1px #D0D0D0;
+	border-left: solid 1px #D0D0D0;
+	background: #fff;
+}
+TABLE.DataTable TD {
+	border-bottom: solid 1px #D0D0D0;
+	margin: 0;
+	border-right: solid 1px #D0D0D0;
+	font-size: 11px;
+	font-weight: 400;
+}
+TABLE.DataTableRowHeading {
+	border: 0px;
+	background: #E1EBFB;
+}
+TABLE.DataTableRowHeading TD {
+	border: 0px;
+	background: #E1EBFB;
+	font-size: 11px;
+	font-weight: 400;
+}
+TR.DataTableRowHeading {
+	border: 0px;
+	background: #E1EBFB;
+}
+TABLE.DataTableDetail {
+	border: 0px;
+	border-spacing: 0px;
+	background: #fff;
+}
+TABLE.DataTableDetail TD {
+	margin: 0;
+	border: 0px;
+	font-size: 11px;
+	font-weight: 400;
+	vertical-align: middle;
+}
+TABLE.DataTableRowOdd {
+	border: 0px;
+	background: #F6F6F6;
+}
+TABLE.DataTableRowOdd TD {
+	border: 0px;
+	background: #F6F6F6;
+	font-size: 11px;
+	font-weight: 400;
+}
+TABLE.DataTableRowEven {
+	border: 0px;
+	background: #FFFFFF;
+}
+TABLE.DataTableRowEven TD {
+	border: 0px;
+	background: #FFFFFF;
+	font-size: 11px;
+	font-weight: 400;
+}
+TR.DataTableRowOdd {
+	background: #F6F6F6;
+}
+TR.DataTableRowEven {
+	background: #FFFFFF;
+}
+TABLE.InfoTable {
+	border-top: solid 1px #D5D5D5;
+	border-left: solid 1px #D5D5D5;
+	background: #fff;
+}
+TABLE.InfoTable TD {
+	border-bottom: solid 1px #D5D5D5;
+	border-right: solid 1px #D5D5D5;
+	font-size: 11px;
+	font-weight: 400;
+}
+TABLE.InfoTableRowHeading {
+	border: 0px;
+	background: #FFFFCC;
+}
+TR.InfoTableRowHeading {
+	background: #FFFFCC;
+}
+TR.InfoTableRowHeading TD {
+	background: #FFFFCC;
+	font-size: 11px;
+	font-weight: 700;
+}
+TR.InfoTableRowOdd {
+	background: #F6F6F6;
+}
+TR.InfoTableRowEven {
+	background: #FFFFFF;
+}
+TABLE.SubTabTable {
+	border: solid 1px #9C9C9C;
+	background: #E7E7E7;
+}
+TABLE.SubTabTableDetail {
+	background: #E7E7E7;
+}
+TABLE.NewsTable {
+	border-spacing: 0px;
+	border: solid 1px #000080;
+	background: #E7E7E7;
+}
+TABLE.NewsTable TD {
+	font-size: 11px;
+	margin: 0;
+	padding: 1px;
+	vertical-align: middle;
+}
+TABLE.NewsTableDetail {
+	background: #E7E7E7;
+	border-spacing: 0px;
+	border: 0px;
+}
+TABLE.NewsTableDetail TD {
+	font-size: 11px;
+	margin: 0;
+	padding: 1px;
+	vertical-align: middle;
+}
+TR.NewsTableRowOdd {
+	background: #E7E7E7;
+}
+TR.NewsTableRowEven {
+	background: #F3F3F3;
+}
+.newstext {
+	font-size: 11px;
+	font-weight: 400;
+	font-family: Verdana, Arial, Helvetica, Sans-serif;
+	color: red;
+}
+TABLE.ShowTable {
+	border: solid 0px #31639C;
+	background: #315868;
+}
+TABLE.FlashTable {
+	border: solid 1px #181852;
+	background: #D60404;
+}
+TABLE.FlashTable TD {
+	background: #D60404;
+	font-size: 9px;
+	font-weight: 400;
+	color: white;
+}
+TABLE.FlashTable2 {
+	border: solid 1px #181852;
+	background: #315868;
+}
+TABLE.FlashTable2 TD {
+	background: #4A8BA6;
+	font-size: 9px;
+	font-weight: 400;
+	color: white;
+}
+TABLE.InnerTab {
+	background: #404040;
+}
+TABLE.InnerTable {
+	border: solid 1px #404040;
+	background: #E7E7E7;
+}
+TABLE.InnerTableDetail {
+	background: #E7E7E7;
+}

@@ -1,0 +1,142 @@
+﻿/* =usages
+ 
+ class: 
+ 	buttons - list of buttons
+ 	button - button using <button> or <A> tags
+ 	button fullwide - a full width button
+ 	 
+ul.buttons {} * button list *
+ul.buttons li {} * individual button within a list *
+a.button {} * button produced from an <a> link *
+button.button {} * button redesign on the <button> html input tag *
+a.button img {} * image within a button*
+a.fullwide div {} * is the <div> inside a button that contains the text - used with image inside button
+*/
+
+/* =button sizing and positioning ONLY */
+a.button, button.button {display:inline-block;}
+
+.button img {
+text-align:left;
+vertical-align:baseline;
+line-height:1px; /* must be used on DIV with img container to prevent the font line length from expanding small images bottom margin */
+float:left;
+height:inherit;
+padding:10px; /* padding of image */
+}
+
+/* size overide */
+a.fullwide, button.fullwide {
+	min-width:300px;
+	min-height:50px; /* minimum of img height plus image top & bottom padding */
+}
+/* full width button */
+.fullwide div {
+text-align:left;
+vertical-align:baseline;
+height:inherit;
+margin-left:50px ; /* min of image width + padding */
+font-size:16px;
+}
+
+.buttons li {margin:10px 0px;} /* spacing between buttons */
+
+/* =button design ONLY */
+a.button, button.button, a.button div, button.button div {
+	text-indent:0;
+	font-family:Verdana, Arial, sans-serif;
+	font-size:16px; /* Fixed initial size */
+	font-weight:bold;
+	font-style:normal;
+	text-decoration:none;
+	padding:10px;
+}
+.button {
+	-webkit-border-top-left-radius:8px;
+	-moz-border-radius-topleft:8px;
+	border-top-left-radius:8px;
+	-webkit-border-top-right-radius:8px;
+	-moz-border-radius-topright:8px;
+	border-top-right-radius:8px;
+	-webkit-border-bottom-right-radius:8px;
+	-moz-border-radius-bottomright:8px;
+	border-bottom-right-radius:8px;
+	-webkit-border-bottom-left-radius:8px;
+	-moz-border-radius-bottomleft:8px;
+	border-bottom-left-radius:8px;
+}
+.button:hover {text-decoration:none;} /* remove the underline */
+
+/* =button colors ONLY */
+.grey, a.grey, li.grey {
+	-moz-box-shadow:inset 0px 1px 0px 0px #eeeeee;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #eeeeee;
+	box-shadow:inset 0px 1px 0px 0px #eeeeee;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #cccccc), color-stop(1, #808080) );
+	background:-moz-linear-gradient( center top, #cccccc 5%, #808080 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#808080');
+	background-color:#cccccc;	
+	border:1px solid #999999;
+	text-shadow:1px 1px 0px #aaaaaa;		
+	color:#ffffff;	
+}
+.grey:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #808080), color-stop(1, #cccccc) );
+	background:-moz-linear-gradient( center top, #808080 5%, #cccccc 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#808080', endColorstr='#cccccc');
+	background-color:#808080;
+}
+.blue, a.blue, li.blue {
+	-moz-box-shadow:inset 0px 1px 0px 0px #5596e6;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #5596e6;
+	box-shadow:inset 0px 1px 0px 0px #5596e6;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #175a9c), color-stop(1, #004080) );
+	background:-moz-linear-gradient( center top, #175a9c 5%, #004080 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#175a9c', endColorstr='#004080');
+	background-color:#175a9c;
+	border:1px solid #004080;
+	text-shadow:1px 1px 0px #1571cd;
+	color:#ffffff;	
+}
+.blue:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #004080), color-stop(1, #175a9c) );
+	background:-moz-linear-gradient( center top, #004080 5%, #175a9c 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#004080', endColorstr='#175a9c');
+	background-color:#004080;
+}
+.red, a.red, li.red {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
+	box-shadow:inset 0px 1px 0px 0px #f5978e;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+	background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+	background-color:#f24537;
+	border:1px solid #d02718;
+	text-shadow:1px 1px 0px #810e05;
+	color:#ffffff;	
+}
+.red:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+	background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+	background-color:#c62d1f;
+}
+.lightblue, a.lightblue, li.lightblue {
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #1b99e1), color-stop(1, #378ee5) );
+	background:-moz-linear-gradient( center top, #1b99e1 5%, #378ee5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1b99e1', endColorstr='#378ee5');
+	background-color:#1b99e1;
+	border:1px solid #004080;
+	text-shadow:1px 1px 0px #528ecc;
+	color:#ffffff;
+}
+.lightblue:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378ee5), color-stop(1, #1b99e1) );
+	background:-moz-linear-gradient( center top, #378ee5 5%, #1b99e1 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378ee5', endColorstr='#1b99e1');
+	background-color:#1571cd;
+}
